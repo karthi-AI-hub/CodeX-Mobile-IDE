@@ -92,13 +92,31 @@ const Footer = () => (
 );
 
 const Home = () => {
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CodeX Mobile IDE",
+        "operatingSystem": "Android, iOS",
+        "applicationCategory": "DeveloperApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "description": "Professional Mobile IDE and Code Editor with desktop-grade syntax highlighting and live preview.",
+        "author": {
+            "@type": "Person",
+            "name": "Karthi-Nexgen"
+        }
+    };
+
     const screenshots = [
-        '/screenshot1.jpeg',
-        '/screenshot2.jpeg',
-        '/screenshot3.jpeg',
-        '/screenshot4.jpeg',
-        '/screenshot5.jpeg',
-        '/screenshot6.jpeg'
+        { src: '/screenshot1.jpeg', alt: 'CodeX Mobile IDE Dashboard - Manage Projects' },
+        { src: '/screenshot2.jpeg', alt: 'Mobile VS Code Editor - Professional Syntax Highlighting' },
+        { src: '/screenshot3.jpeg', alt: 'Mobile Code Editor for Android - VS Code Interface' },
+        { src: '/screenshot4.jpeg', alt: 'CodeX IDE - Multi-language support on mobile' },
+        { src: '/screenshot5.jpeg', alt: 'Live Web Preview for Mobile Development' },
+        { src: '/screenshot6.jpeg', alt: 'CodeX - Professional Mobile Coding Environment' }
     ];
 
     const features = [
@@ -136,6 +154,9 @@ const Home = () => {
 
     return (
         <div className="min-h-screen bg-black text-white selection:bg-blue-500/30">
+            <script type="application/ld+json">
+                {JSON.stringify(structuredData)}
+            </script>
             {/* Hero Section */}
             <section className="relative pt-[200px] pb-32 px-6 overflow-hidden">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full -z-10">
@@ -187,12 +208,12 @@ const Home = () => {
 
                 <div className="relative group pause-on-hover px-4">
                     <div className="animate-marquee flex gap-8 py-4">
-                        {[...screenshots, ...screenshots].map((src, i) => (
+                        {[...screenshots, ...screenshots].map((img, i) => (
                             <div
                                 key={i}
                                 className="h-[500px] md:h-[600px] aspect-[9/19] rounded-[32px] md:rounded-[48px] overflow-hidden border-4 md:border-8 border-zinc-900 shadow-2xl relative flex-shrink-0"
                             >
-                                <img src={src} alt="App Screenshot" className="w-full h-full object-cover" />
+                                <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                             </div>
                         ))}

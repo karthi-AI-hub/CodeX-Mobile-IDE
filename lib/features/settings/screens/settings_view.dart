@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/theme/app_theme.dart';
 import '../providers/settings_provider.dart';
+import 'about_legal_screen.dart';
 
 class SettingsView extends ConsumerWidget {
   const SettingsView({super.key});
@@ -52,13 +53,26 @@ class SettingsView extends ConsumerWidget {
                 ),
                 const Divider(color: CodeXColors.border),
                 _buildSectionHeader('About'),
-                const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 8),
-                  child: Text(
-                    'CodeX Mobile v1.0.0',
-                    style: TextStyle(color: Colors.grey, fontSize: 12),
+                ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  dense: true,
+                  title: const Text(
+                    'Legal & About',
+                    style: TextStyle(color: CodeXColors.text, fontSize: 13),
                   ),
+                  subtitle: const Text(
+                    'v1.0.0',
+                    style: TextStyle(color: Colors.grey, fontSize: 11),
+                  ),
+                  trailing: const Icon(Icons.chevron_right_rounded, color: Colors.grey, size: 20),
+                  onTap: () {
+                    // If in a dialog, we might need a different root navigator
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => const AboutLegalScreen()),
+                    );
+                  },
                 ),
+                const Divider(color: CodeXColors.border),
               ],
             ),
           ),

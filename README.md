@@ -1,16 +1,52 @@
-# vscode
+# CodeX: The Ultimate Mobile IDE 🚀
 
-A new Flutter project.
+**CodeX** is a premium, high-performance mobile IDE designed for developers who need a desktop-grade coding experience on the go.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+- **Premium VS Code Inspired UI**: A clean, professional interface with a dedicated Activity Bar, SideBar, and StatusBar.
+- **Smart Editor**: Powered by `code_text_field` with support for multiple programming languages.
+- **Project Management**: Create, import, and manage multiple projects with ease.
+- **Onboarding Tour**: A smooth, interactive introduction for new users.
+- **Responsive Design**: Optimized for both mobile and tablet screens with high-end animations.
+- **Quick Symbols Toolbar**: Faster coding with a customizable symbols row above the keyboard.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠 Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Framework**: [Flutter](https://flutter.dev)
+- **State Management**: [Riverpod](https://riverpod.dev)
+- **Typography**: [Google Fonts (Outfit & Fira Code)](https://fonts.google.com/)
+- **Icons**: Material Rounded Icons
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK (latest stable version)
+- Android Studio / VS Code with Flutter extension
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/CodeX.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd CodeX
+   ```
+3. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+4. Run the application:
+   ```bash
+   flutter run
+   ```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+*Built with ❤️ for the Developer Community.*

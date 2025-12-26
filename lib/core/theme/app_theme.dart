@@ -20,16 +20,16 @@ class AppTheme {
       brightness: Brightness.dark,
       primaryColor: CodeXColors.accentBlue,
       scaffoldBackgroundColor: CodeXColors.background,
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         backgroundColor: CodeXColors.header,
         elevation: 0,
         centerTitle: false,
-        titleTextStyle: TextStyle(
-          color: CodeXColors.text,
+        titleTextStyle: GoogleFonts.outfit(
+          color: Colors.white,
           fontSize: 18,
           fontWeight: FontWeight.w600,
         ),
-        iconTheme: IconThemeData(color: CodeXColors.text),
+        iconTheme: const IconThemeData(color: CodeXColors.text),
       ),
       colorScheme: const ColorScheme.dark(
         primary: CodeXColors.accentBlue,
@@ -39,21 +39,35 @@ class AppTheme {
         onSurface: CodeXColors.text,
         onBackground: CodeXColors.text,
       ),
-      textTheme: GoogleFonts.firaCodeTextTheme().copyWith(
+      textTheme: GoogleFonts.outfitTextTheme().copyWith(
         bodyMedium: const TextStyle(color: CodeXColors.text),
+        titleLarge: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
       ),
       cardTheme: CardThemeData(
         color: CodeXColors.cardBg,
-        elevation: 2,
+        elevation: 4,
+        shadowColor: Colors.black.withOpacity(0.5),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(4),
-          side: const BorderSide(color: CodeXColors.border, width: 0.5),
+          borderRadius: BorderRadius.circular(12),
+          side: BorderSide(color: Colors.white.withOpacity(0.05), width: 1),
         ),
       ),
-      dialogTheme: const DialogThemeData(
+      dialogTheme: DialogThemeData(
         backgroundColor: CodeXColors.sidebar,
-        titleTextStyle: TextStyle(color: CodeXColors.text, fontSize: 18),
-        contentTextStyle: TextStyle(color: CodeXColors.text),
+        elevation: 10,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        titleTextStyle: GoogleFonts.outfit(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+        contentTextStyle: GoogleFonts.outfit(color: CodeXColors.text),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: CodeXColors.accentBlue,
+          foregroundColor: Colors.white,
+          elevation: 0,
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+          textStyle: GoogleFonts.outfit(fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }

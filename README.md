@@ -1,52 +1,65 @@
-# CodeX: The Ultimate Mobile IDE 🚀
+# CodeX - Professional Mobile IDE 🚀📱
 
-**CodeX** is a premium, high-performance mobile IDE designed for developers who need a desktop-grade coding experience on the go.
+[![Play Store](https://img.shields.io/badge/Google_Play-CodeX-black.svg?style=for-the-badge&logo=google-play)](https://play.google.com/store/apps/details?id=com.nexera.codex)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-## ✨ Features
+CodeX is a high-performance, professional-grade IDE for Android and iOS that brings the power of desktop coding to your pocket. Designed for modern web developers, it offers a zero-compromise experience with lightning-fast syntax highlighting and instant live previews.
 
-- **Premium VS Code Inspired UI**: A clean, professional interface with a dedicated Activity Bar, SideBar, and StatusBar.
-- **Smart Editor**: Powered by `code_text_field` with support for multiple programming languages.
-- **Project Management**: Create, import, and manage multiple projects with ease.
-- **Onboarding Tour**: A smooth, interactive introduction for new users.
-- **Responsive Design**: Optimized for both mobile and tablet screens with high-end animations.
-- **Quick Symbols Toolbar**: Faster coding with a customizable symbols row above the keyboard.
+---
 
-## 🛠 Tech Stack
+## 💎 Premium Features
 
-- **Framework**: [Flutter](https://flutter.dev)
-- **State Management**: [Riverpod](https://riverpod.dev)
-- **Typography**: [Google Fonts (Outfit & Fira Code)](https://fonts.google.com/)
-- **Icons**: Material Rounded Icons
+- **⚡ Turbo Performance**: Instant file loading and zero-latency editing, even for heavy projects.
+- **🎨 Smart Syntax**: Advanced highlighting for HTML, CSS, JavaScript, and more.
+- **🌐 Live Preview**: Built-in web engine to see your changes in real-time.
+- **🛡️ Zero Permissions**: Absolute privacy. Your code stays on your device—offline and secure.
+- **📱 Native Symbols Toolbar**: Expertly crafted toolbar for fast coding on touch devices.
+
+---
+
+## 📸 Screenshots
+
+| Dashboard | Editor | Preview |
+| :---: | :---: | :---: |
+| ![Dashboard](website/public/screenshot2.jpeg) | ![Editor](website/public/screenshot3.jpeg) | ![Preview](website/public/screenshot5.jpeg) |
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Flutter / Dart
+- **State Management**: Riverpod
+- **Editor Engine**: Code Text Field
+- **Web Interface**: Vite + React + Tailwind CSS
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
-- Flutter SDK (latest stable version)
-- Android Studio / VS Code with Flutter extension
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (3.10.x or higher)
+- Android Studio / VS Code
 
 ### Installation
-
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/CodeX.git
+   git clone https://github.com/karthi-AI-Hub/codex.git
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd CodeX
-   ```
-3. Install dependencies:
+2. Install dependencies:
    ```bash
    flutter pub get
    ```
-4. Run the application:
+3. Run the application:
    ```bash
    flutter run
    ```
 
-## 📄 License
+---
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📄 Legal
+
+CodeX is licensed under the [MIT License](LICENSE). Visit our **[Official Website](https://play.google.com/store/apps/details?id=com.nexera.codex)** for the Privacy Policy and Terms of Service.
 
 ---
-*Built with ❤️ for the Developer Community.*
+
+Developed with ❤️ by the **CodeX Team** (karthi.nexgen.dev@gmail.com)
